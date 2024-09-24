@@ -1,0 +1,31 @@
+/* Javier Arias Carroza */
+
+.destacable {
+    color: tomato;
+    font-weight: 800;
+}
+
+.contenedorInicial {
+    padding: 1%;
+    display: flex; /* Hace que los elementos hijos se comporten como flex-items */
+}
+
+.contenedorInicial > div:nth-of-type(1) {
+    width: 30%;
+}
+
+.contenedorInicial > div:nth-of-type(2) {
+    padding: 1%;
+    width: 70%;
+    align-content: center;
+}
+
+.contenedorInicial > div:nth-of-type(1) > figure > img {
+    width: 100%;
+    height: auto;
+    border: 2px solid tomato;
+}
+
+.contenedorInicial > div:nth-of-type(1) > figure > figcaption {
+    text-align: center;
+}

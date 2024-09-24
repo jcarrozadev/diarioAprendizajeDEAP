@@ -11,7 +11,10 @@
 }
 
 body {
-    background-color: #fff59d;
+    background-color: #fdf9d0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -24,7 +27,7 @@ header {
     margin-bottom: 1%;
 }
 
-header > .logo {
+header > .logo, header > .fotoPerfil > img {
     cursor: pointer;
 }
 
@@ -34,7 +37,7 @@ header > .logo > img {
     transition: all 0.3s;
 }
 
-header > .logo > img:hover {
+header > .logo > img:hover, header > .fotoPerfil > img:hover  {
     transform: scale(1.2);
 }
 
@@ -42,6 +45,16 @@ header > nav > .nav-links > li {
     list-style: none;
     display: inline-block;
     padding: 0 20px;
+}
+
+header > .fotoPerfil > img {
+    border-radius: 50px;
+}
+
+header > .fotoPerfil > img {
+    width: 9vh;
+    height: auto;
+    transition: all 0.3s;
 }
 
 header > nav > .nav-links > li:hover {
@@ -56,7 +69,7 @@ header > nav > .nav-links > li > a {
 
 header > nav > .nav-links > li > a:hover {
     transition: all 0.3s;
-    color: #ffbc0e;
+    color: #ffce51;
 }
 
 header > .btn > button {
@@ -72,6 +85,6 @@ header > .btn > button {
 
 header > .btn > button:hover {
     background-color: #c9eaee;
-    color: #ffbc0e;
+    color: #ffd058;
     transform: scale(1.1);
 }

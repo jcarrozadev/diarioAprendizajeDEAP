@@ -1,20 +1,25 @@
 /* Javier Arias Carroza */
 
+:root {
+    --principal: rgb(55, 109, 197);
+    --titulo: rgb(37, 78, 145);
+}
+
 /* Scrollbar personalizada */
 
 html::-webkit-scrollbar {
-    background-color: #fdf9d0;
+    background-color: #ffffff;
     width: 0.8rem;
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: tomato;
+    background-color: var(--principal);
     border-radius: 4px;
-    border: 2px solid #fdf9d0;
+    border: 2px solid #ffffff;
 }
 
 html::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(252, 121, 98);
+    background-color: rgb(73, 130, 221)
 }
 
 /* Estilos generales */
@@ -25,18 +30,18 @@ html {
 }
 
 h1 {
-    color: tomato;
+    color: var(--titulo);
     font-size: 1.4rem;
     font-weight: 800;
 }
 
 hr {
-    border: 1px solid tomato;
+    border: 1px solid var(--principal);
     margin: 1% 0;
 }
 
 .destacable {
-    color: tomato;
+    color: var(--titulo);
     font-weight: 800;
 }
 
@@ -60,7 +65,7 @@ hr {
 .contenedorInicial > div:nth-of-type(1) > figure > img {
     width: 100%;
     height: auto;
-    border: 2px solid tomato;
+    border: 2px solid var(--principal);
 }
 
 .contenedorInicial > div:nth-of-type(1) > figure > figcaption {
@@ -75,7 +80,7 @@ hr {
 
 .contenedorTemario > article > details {
     margin: 1% 0;
-    background-color: tomato;
+    background-color: var(--principal);
     color: #eceff1;
     padding: 1%;
     border-radius: 4px;
@@ -128,4 +133,12 @@ hr {
 
 #gitPlantilla {
     display: block;
+}
+
+.locked {
+    color: rgb(184, 0, 0);
+}
+
+.locked:hover {
+    color: rgb(231, 38, 38);
 }
